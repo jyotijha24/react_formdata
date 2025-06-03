@@ -21,7 +21,7 @@ function App()
     </form>
     <div className="mx-auto flex gap-2 flex-wrap h-screen w-full items-center justify-center">
     {
-     User.length>0 ? User.map((details)=>{ return <Card img={details.image} name={details.name} email={details.email}/> }):<h1>no user</h1>
+     User.length>0 ? User.map((details)=>{ return <Card imge={details.image} name={details.name} email={details.email}/> }):<h1>no user</h1>
    
     } 
     </div>

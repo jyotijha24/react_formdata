@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Card({img,name,email}) {
+function Card({imge,name,email}) {
   return (
     <>
       <div className='w-[200px] border p-2 bg-neutral-300  text-center  '>
-        <img  className='w-10 h-10 rounded-full inline ' src={img}></img>
+        <img  className='w-10 h-10 rounded-full inline ' src={imge}></img>
        <div className='text-sm '>
          <p className='font-bold mt-1'>{name}</p>
         <p>{email}</p>
