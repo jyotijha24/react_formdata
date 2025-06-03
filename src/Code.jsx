@@ -70,10 +70,11 @@
 
 // function App()
 // {
-//     let {register,handleSubmit}=useForm();
+//     let {register,handleSubmit,reset}=useForm();
 // function submitdata(data)
 // {
 //   console.log(data);
+//   reset();
 // }
 
 //   return (
@@ -86,6 +87,39 @@
 //       <input type="submit" value="submit"/>
 //       </form>
 //     </div>
+//     </>
+//   )
+// }
+// export default App;
+
+
+// split bill app
+
+// import { useRef, useState } from "react";
+// import { useForm } from "react-hook-form";
+
+// function App()
+// {
+//   let [bill,setbill]=useState(0);
+//   let{register,handleSubmit,reset}=useForm();
+  
+
+//   return (
+//     <>
+//     <form action="" onSubmit={handleSubmit (data=>{return  setbill(data.amount/data.user)})}>
+//     <div className="w-[450px] mx-auto text-center border mt-20">
+//       <h1 className=" font-bold text-lg">you have to pay RS. {bill}</h1>
+//       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quidem!</p>
+      
+//       <h1 className=" font-bold">Split the bill</h1>
+//       <div className="flex gap-2 ml-5 mt-4">
+//         <input className="border p-2" type="text" {...register('amount')} placeholder="enter total bill amount"/>
+//         <input type="text"  className="border p-2"{...register('user')} placeholder="enter total bill amount"/>
+        
+//       </div>
+//       <input type="submit" className="w-full bg-blue-800 text-white p-2 mt-4 rounded-2xl"  value="submit"/>
+//     </div>
+//     </form>
 //     </>
 //   )
 // }
