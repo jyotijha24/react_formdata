@@ -6,7 +6,7 @@ function Bmicalculate() {
     // let [Bmi,setBmi]=useState([]);
     let [category,setcategory]=useState("") ;
     let [showresult,setshowresult]=useState(false);
-    let[age,setage]=useState(false);
+    let[age,setage]=useState("");
     let[formdata,setformdata]=useState({
         "bmi":'',
         "bmiprime":''
